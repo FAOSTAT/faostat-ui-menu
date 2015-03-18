@@ -12,7 +12,7 @@ define(['jquery',
 
         this.CONFIG = {
 
-            lang: 'E',
+            lang: 'en',
             placeholder_id: 'faostat_ui_menu',
             prefix: 'fenix_'
 
@@ -34,13 +34,19 @@ define(['jquery',
         var dynamic_data = {
             toggle_navigation: translate.toggle_navigation,
             home: translate.home,
+            home_link: '#/' + this.CONFIG.lang + '/home/',
             browse: translate.browse,
+            browse_link: '#/' + this.CONFIG.lang + '/browse/',
             download: translate.download,
+            download_link: '#/' + this.CONFIG.lang + '/download/',
             compare: translate.compare,
+            compare_link: '#/' + this.CONFIG.lang + '/compare/',
             search: translate.search,
+            search_link: '#/' + this.CONFIG.lang + '/search/',
             analysis: translate.analysis,
+            analysis_link: '#/' + this.CONFIG.lang + '/analysis/',
             mes: translate.mes,
-            signin: translate.signin
+            mes_link: '#/' + this.CONFIG.lang + '/mes/'
         };
         var html = template(dynamic_data);
         $('#' + this.CONFIG.placeholder_id).html(html);
