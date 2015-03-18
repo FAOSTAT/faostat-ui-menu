@@ -22,12 +22,17 @@
                                     </i>
                                 </a>
                             </li>
-                            <li>
-                                <a href='{{download_link}}'>
+                            <li class='dropdown'>
+                                <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>
                                     <i class='fa fa-cloud-download'>
                                         {{download}}
                                     </i>
                                 </a>
+                                <ul class='dropdown-menu' role='menu'>
+                                    <li><a href='{{download_link}}'>Food Security</a></li>
+                                    <li><a href='{{download_link}}'>Production</a></li>
+                                    <li><a href='{{download_link}}'>Trade</a></li>
+                                </ul>
                             </li>
                             <li>
                                 <a href='{{compare_link}}'>
