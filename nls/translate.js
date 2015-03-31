@@ -8,7 +8,8 @@ define({
         search: 'Search Data',
         analysis: 'Analysis',
         mes: 'Methods & Standards',
-        signin: 'Sign In'
+        signin: 'Sign In',
+        error: 'FAOSTAT UI Menu Error'
     },
     F : true,
     S : true

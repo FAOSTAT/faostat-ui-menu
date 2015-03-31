@@ -15,12 +15,15 @@
                     </div>
                     <div class='collapse navbar-collapse' id='navbar-collapse'>
                         <ul class='nav navbar-nav'>
-                            <li>
-                                <a href='{{browse_link}}'>
-                                    <i class='fa fa-list'>
+                            <li class='dropdown'>
+                                <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>
+                                    <i class='fa fa-cloud-download'>
                                         {{browse}}
                                     </i>
                                 </a>
+                                <ul class='dropdown-menu' role='menu' id='browse_dropdown'>
+
+                                </ul>
                             </li>
                             <li class='dropdown'>
                                 <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>
@@ -28,10 +31,8 @@
                                         {{download}}
                                     </i>
                                 </a>
-                                <ul class='dropdown-menu' role='menu'>
-                                    <li><a href='{{download_link}}'>Food Security</a></li>
-                                    <li><a href='{{download_link}}'>Production</a></li>
-                                    <li><a href='{{download_link}}'>Trade</a></li>
+                                <ul class='dropdown-menu' role='menu' id='download_dropdown'>
+
                                 </ul>
                             </li>
                             <li>
@@ -68,4 +69,14 @@
             </nav>
         </div>
     </div>
+</script>
+
+<script type='text/x-handlebars-template' id='faostat_ui_menu_item'>
+    {{#each group}}
+    <li>
+        <a href='{{item_link}}'>
+            {{item_title}}
+        </a>
+    </li>
+    {{/each}}
 </script>
