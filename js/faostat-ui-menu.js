@@ -127,11 +127,11 @@ define(['jquery',
     };
 
     MENU.prototype.build_download_link = function(group) {
-        return '#/' + this.CONFIG.lang + '/download/' + group.toUpperCase() + '/*/metadata/';
+        return '#/' + this.CONFIG.lang + '/download/' + group.toUpperCase() + '/';
     };
 
     MENU.prototype.build_browse_link = function(group) {
-        return '#/' + this.CONFIG.lang + '/browse/' + group.toUpperCase() + '/*/';
+        return '#/' + this.CONFIG.lang + '/browse/' + group.toUpperCase() + '/';
     };
 
     return MENU;
