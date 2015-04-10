@@ -11,6 +11,6 @@ define({
         signin: 'Sign In',
         error: 'FAOSTAT UI Menu Error'
     },
-    F : true,
-    S : true
+    fr : true,
+    es : true
 });
