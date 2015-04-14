@@ -61,8 +61,9 @@ define(['jquery',
         $('#' + this.CONFIG.placeholder_id).html(html);
 
         /* Enhance buttons. */
-        $('#es_selector').click(function() {
-            amplify.publish('language_event', {language: 'es'});
+        $("a[id$='_language_selector']").click(function() {
+            var lang = this.id.substring(0, this.id.indexOf('_'));
+            amplify.publish('language_event', {language: lang});
         });
 
         /* Show groups. */
