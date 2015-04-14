@@ -9,7 +9,9 @@ define({
         analysis: 'Analysis',
         mes: 'Methods & Standards',
         signin: 'Sign In',
-        error: 'FAOSTAT UI Menu Error'
+        error: 'FAOSTAT UI Menu Error',
+        fao_label: 'Food and Agriculture Organization of the United Nations',
+        ess_label: 'Statistics Division'
     },
     fr : true,
     es : true

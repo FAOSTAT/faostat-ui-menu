@@ -1,4 +1,39 @@
 <script type='text/x-handlebars-template' id='faostat_ui_menu_structure'>
+    <div class='row' style='height: 50px;'>
+        <div class='col-xs-12 col-sm-3 col-md-3 col-lg-3'>
+            <div style='background-color: #174c74; min-height: 4em; line-height: 4em;'>
+                &nbsp;
+            </div>
+        </div>
+        <div class='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
+            <div style='background-color: #379bce; color: #ffffff; min-height: 4em; line-height: 2em; text-transform: uppercase;'>
+                {{fao_label}}
+                <br>
+                <b>{{ess_label}}</b>
+            </div>
+        </div>
+        <div class='col-xs-12 col-sm-1 col-md-1 col-lg-1'>
+            <div style='background-color: #379bce; color: #ffffff; text-align: center; min-height: 4em; line-height: 4em;'>
+                <a style='color: #ffffff;' id='en_selector'>
+                    ENGLISH
+                </a>
+            </div>
+        </div>
+        <div class='col-xs-12 col-sm-1 col-md-1 col-lg-1'>
+            <div style='background-color: #379bce; color: #ffffff; text-align: center; min-height: 4em; line-height: 4em;'>
+                <a style='color: #ffffff;' id='fr_selector'>
+                    FRAN&#199;AIS
+                </a>
+            </div>
+        </div>
+        <div class='col-xs-12 col-sm-1 col-md-1 col-lg-1'>
+            <div style='background-color: #379bce; color: #ffffff; text-align: center; min-height: 4em; line-height: 4em;'>
+                <a style='color: #ffffff;' id='es_selector'>
+                    ESPA&#209;OL
+                </a>
+            </div>
+        </div>
+    </div>
     <div class='row'>
         <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
             <nav class='navbar navbar-default' role='navigation'>

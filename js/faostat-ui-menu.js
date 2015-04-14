@@ -39,6 +39,8 @@ define(['jquery',
         var source = $(templates).filter('#faostat_ui_menu_structure').html();
         var template = Handlebars.compile(source);
         var dynamic_data = {
+            fao_label: translate.fao_label,
+            ess_label: translate.ess_label,
             toggle_navigation: translate.toggle_navigation,
             home: translate.home,
             home_link: '#/' + this.CONFIG.lang + '/home/',
@@ -57,6 +59,11 @@ define(['jquery',
         };
         var html = template(dynamic_data);
         $('#' + this.CONFIG.placeholder_id).html(html);
+
+        /* Enhance buttons. */
+        $('#es_selector').click(function() {
+            amplify.publish('language_event', {language: 'es'});
+        });
 
         /* Show groups. */
         this.show_groups();
