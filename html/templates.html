@@ -1,43 +1,28 @@
 <script type='text/x-handlebars-template' id='faostat_ui_menu_structure'>
-    <div class='row' style='height: 50px;'>
-        <div class='col-xs-12 col-sm-3 col-md-3 col-lg-3'>
-            <div style='background-color: #174c74; min-height: 4em; line-height: 4em;'>
-                &nbsp;
+    <div class='row' class="faostat-menu-boot">
+       <div class="col-xs-12">
+
+            <div id="fs-head" class="fs-head">
+                <div class="fs-logo-holder">
+                    <div class="fs-logo"></div>
+                </div>
+                <div class="fs-united"><p id="fs-fao" class="truncate">FOOD AND AGRICULTURE ORGANIZATION OF THE UNITED NATIONS</p>
+
+                    <p class="fs-bold fs-statistics-division"  class="truncate">Statistics Division</p></div>
+                <div class="fs-languages">
+                    <span id="langE" class="fs-lan-selected">ENGLISH</span>|
+                    <span id="langF">FRANÇAIS</span>|
+                    <span id="langS">ESPAÑOL</span>
+                </div>
             </div>
-        </div>
-        <div class='col-xs-12 col-sm-6 col-md-6 col-lg-6'>
-            <div style='background-color: #379bce; color: #ffffff; min-height: 4em; line-height: 2em; text-transform: uppercase;'>
-                {{fao_label}}
-                <br>
-                <b>{{ess_label}}</b>
-            </div>
-        </div>
-        <div class='col-xs-12 col-sm-1 col-md-1 col-lg-1'>
-            <div style='background-color: #379bce; color: #ffffff; text-align: center; min-height: 4em; line-height: 4em;'>
-                <a style='color: #ffffff;' id='en_language_selector'>
-                    ENGLISH
-                </a>
-            </div>
-        </div>
-        <div class='col-xs-12 col-sm-1 col-md-1 col-lg-1'>
-            <div style='background-color: #379bce; color: #ffffff; text-align: center; min-height: 4em; line-height: 4em;'>
-                <a style='color: #ffffff;' id='fr_language_selector'>
-                    FRAN&#199;AIS
-                </a>
-            </div>
-        </div>
-        <div class='col-xs-12 col-sm-1 col-md-1 col-lg-1'>
-            <div style='background-color: #379bce; color: #ffffff; text-align: center; min-height: 4em; line-height: 4em;'>
-                <a style='color: #ffffff;' id='es_language_selector'>
-                    ESPA&#209;OL
-                </a>
-            </div>
-        </div>
+       </div>
+
+
     </div>
     <div class='row'>
         <div class='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
             <nav class='navbar navbar-default' role='navigation'>
-                <div class='container-fluid'>
+
                     <div class='navbar-header'>
                         <button type='button' class='navbar-toggle collapsed' data-toggle='collapse'
                                 data-target='#navbar-collapse'>
@@ -46,15 +31,13 @@
                             <span class='icon-bar'></span>
                             <span class='icon-bar'></span>
                         </button>
-                        <a class='navbar-brand' href='{{home_link}}'>{{home}}</a>
+                        <a class='navbar-brand' href='{{home_link}}' >{{home}}</a>
                     </div>
                     <div class='collapse navbar-collapse' id='navbar-collapse'>
                         <ul class='nav navbar-nav'>
                             <li class='dropdown'>
                                 <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>
-                                    <i class='fa fa-compass'>
-                                        {{browse}}
-                                    </i>
+                                    <i class='fa fa-compass'></i>{{browse}}
                                 </a>
                                 <ul class='dropdown-menu' role='menu' id='browse_dropdown'>
 
@@ -62,9 +45,7 @@
                             </li>
                             <li class='dropdown'>
                                 <a href='#' class='dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'>
-                                    <i class='fa fa-cloud-download'>
-                                        {{download}}
-                                    </i>
+                                    <i class='fa fa-cloud-download'></i>{{download}}
                                 </a>
                                 <ul class='dropdown-menu' role='menu' id='download_dropdown'>
 
@@ -72,35 +53,27 @@
                             </li>
                             <li>
                                 <a href='{{compare_link}}'>
-                                    <i class='fa fa-share'>
-                                        {{compare}}
-                                    </i>
+                                    <i class='fa fa-share'></i> {{compare}}
                                 </a>
                             </li>
                             <li>
                                 <a href='{{search_link}}'>
-                                    <i class='fa fa-calendar'>
-                                        {{search}}
-                                    </i>
+                                    <i class='fa fa-calendar'></i>{{search}}
                                 </a>
                             </li>
                             <li>
                                 <a href='{{analysis_link}}'>
-                                    <i class='fa fa-wrench'>
-                                        {{analysis}}
-                                    </i>
+                                    <i class='fa fa-wrench'></i>{{analysis}}
                                 </a>
                             </li>
                             <li>
                                 <a href='{{mes_link}}'>
-                                    <i class='fa fa-wrench'>
-                                        {{mes}}
-                                    </i>
+                                    <i class='fa fa-wrench'></i>{{mes}}
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
+
             </nav>
         </div>
     </div>
