@@ -6,6 +6,7 @@ define(function() {
             faostat_ui_menu: '../'
         },
         shim: {
+            deps: ['text', 'i18n'],
             bootstrap: {
                 deps: ['jquery']
             }
