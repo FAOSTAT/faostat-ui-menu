@@ -1,6 +1,6 @@
 define(['jquery',
         'handlebars',
-        'text!faostat_ui_menu/html/templates.html',
+        'text!faostat_ui_menu/html/templates.hbs',
         'i18n!faostat_ui_menu/nls/translate',
         'faostat_commons',
         'bootstrap',
