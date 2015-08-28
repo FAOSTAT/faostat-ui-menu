@@ -1,9 +1,12 @@
-define(function() {
+/*global define*/
+define(function () {
+
+    'use strict';
 
     var config = {
         paths: {
-            FAOSTAT_UI_MENU: 'faostat-ui-menu',
-            faostat_ui_menu: '../'
+            FAOSTAT_UI_MENU: 'start',
+            faostat_ui_menu: '../../'
         },
         shim: {
             deps: ['text', 'i18n'],
