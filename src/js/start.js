@@ -136,7 +136,7 @@ define(['jquery',
     };
 
     MENU.prototype.build_download_link = function(group) {
-        return '#/' + this.CONFIG.lang + '/download/' + group.toUpperCase() + '/';
+        return '#/' + this.CONFIG.lang + '/download/metadata/' + group.toUpperCase() + '/';
     };
 
     MENU.prototype.build_browse_link = function(group) {
