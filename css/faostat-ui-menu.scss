@@ -194,13 +194,19 @@
   display: inline-block;
   cursor: pointer;
   background: none repeat scroll 0 0 #FFFFFF;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ddd;
   color: #666666;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
   margin: 3px 3px 3px 0;
   padding: 2px 5px;
+}
+
+.summary-item:hover {
+  border: 1px solid #666;
+  color: #fff;
+  background-color: #666;
 }
 
 .v-space {
