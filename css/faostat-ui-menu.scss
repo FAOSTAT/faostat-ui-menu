@@ -403,7 +403,7 @@
 
 /* HEADER */
 .fs-head {
-  background-color: #379bce;
+  background-color: #379bce !important;
   height: 50px;
   position: relative;
 }
@@ -411,7 +411,7 @@
 .fs-logo-holder {
   width: 200px;
   height: 50px;
-  background-color: #174c74;
+  background-color: #174c74 !important;
   padding: 7px 0 0 20px;
 }
 
@@ -495,14 +495,14 @@
 }
 
 .fs-menu span:hover {
-  border-color: #40769e;
+  border-color: #40769e !important;
   transition: border-color 0.218s ease 0s;
 }
 
 .fs-menu span.fs-menu-selected {
   color: #174c74;
   font: normal normal 900 12px/normal "Roboto", sans-serif;
-  border-bottom: 4px solid #40769e;
+  border-bottom: 4px solid #40769e !important;
   transition: border-color 0.218s ease 0s;
 }
 
@@ -515,10 +515,10 @@
 #searchFS input[type="text"] {
   /* Reset Previous Search Box */
   box-shadow: none;
-  color: #666666;
+  color: #666666 !important;
   font-weight: normal;
   /* End reset */
-  border: 1px solid #d1d1d1;
+  border: 1px solid #d1d1d1 !important;
   border-radius: 20px;
   padding: 4px 15px 4px 30px !important;
   transition: all 0.7s ease 0s;
@@ -532,7 +532,7 @@
 .navbar {
   font-size: 13px;
   margin-bottom: 0;
-  background-color: #e6e6e6;
+  background-color: #e6e6e6 !important;
 }
 
 .navbar .fa {
@@ -553,7 +553,7 @@
   left: 0;
   height: 0;
   width: 100%;
-  background-color: #379bce;
+  background-color: #379bce !important;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -ms-transition: all 0.3s ease 0s;
@@ -569,7 +569,7 @@
   right: 0;
   height: 50%;
   width: 1px;
-  background-color: #999999;
+  background-color: #999999 !important;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -598,4 +598,8 @@
 
 #download_dropdown a {
   color: #174c74 !important;
+}
+
+.navbar.navbar-default {
+  background-color: #0d6cac !important;
 }
