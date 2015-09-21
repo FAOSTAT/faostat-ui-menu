@@ -56,7 +56,7 @@ define(['jquery',
             analysis: translate.analysis,
             analysis_link: '#/' + this.CONFIG.lang + '/analysis/',
             mes: translate.mes,
-            mes_link: '#/' + this.CONFIG.lang + '/standards/methodologies/'
+            mes_link: '#/' + this.CONFIG.lang + '/standards/units/'
         };
         var html = template(dynamic_data);
         $('#' + this.CONFIG.placeholder_id).html(html);
