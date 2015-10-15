@@ -54,7 +54,7 @@ define(['jquery',
             analysis: translate.analysis,
             analysis_link: '#' + Common.getLocale() + '/analysis',
             mes: translate.mes,
-            mes_link: '#' + Common.getLocale() + '/standards/units'
+            mes_link: '#' + Common.getLocale() + '/standards/methodologies'
         };
         html = template(dynamic_data);
         $('#' + this.CONFIG.placeholder_id).html(html);
