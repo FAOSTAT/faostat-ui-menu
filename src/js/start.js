@@ -1,6 +1,7 @@
 /*global define*/
 /*jslint nomen: true*/
 define(['jquery',
+        'config/Config',
         'handlebars',
         'text!faostat_ui_menu/html/templates.hbs',
         'i18n!faostat_ui_menu/nls/translate',
@@ -8,7 +9,7 @@ define(['jquery',
         'globals/Common',
         'underscore',
         'amplify',
-        'chaplin'], function ($, Handlebars, templates, translate, FAOSTATAPIClient, Common, _) {
+        'chaplin'], function ($, C, Handlebars, templates, translate, FAOSTATAPIClient, Common, _) {
 
     'use strict';
 
@@ -68,6 +69,7 @@ define(['jquery',
         var self = this;
 
         this.FAOSTATAPIClient.groups({
+            datasource: C.DATASOURCE,
             lang: Common.getLocale()
         }).then(function (json) {
             self.buildDropDownMenu('#browse_dropdown', self.CONFIG.BROWSE_BASE_URL, json.data);
