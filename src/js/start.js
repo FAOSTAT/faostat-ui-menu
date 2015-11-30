@@ -2,6 +2,7 @@
 /*jslint nomen: true*/
 define(['jquery',
         'config/Config',
+        'config/Routes',
         'handlebars',
         'text!faostat_ui_menu/html/templates.hbs',
         'i18n!faostat_ui_menu/nls/translate',
@@ -9,7 +10,7 @@ define(['jquery',
         'globals/Common',
         'underscore',
         'amplify',
-        'chaplin'], function ($, C, Handlebars, templates, translate, FAOSTATAPIClient, Common, _) {
+        'chaplin'], function ($, C, ROUTE, Handlebars, templates, translate, FAOSTATAPIClient, Common, _) {
 
     'use strict';
 
@@ -42,11 +43,8 @@ define(['jquery',
             html;
 
         dynamic_data = {
-            fao_label: translate.fao_label,
-            ess_label: translate.ess_label,
-            toggle_navigation: translate.toggle_navigation,
             home: translate.home,
-            home_link: '#' + Common.getLocale() + '/home/',
+            home_link: '#' + Common.getLocale() + '/' + ROUTE.HOME + '/',
             browse: translate.browse,
             download: translate.download,
             compare: translate.compare,
@@ -95,12 +93,12 @@ define(['jquery',
     };
 
     MENU.prototype.renderDD = function (id, data) {
-        var source, template, dynamic_data, html;
-        source = $(templates).filter('#faostat_ui_menu_item').html();
-        template = Handlebars.compile(source);
-        dynamic_data = {group: data};
-        html = template(dynamic_data);
-        $(id).html(html);
+
+        var source = $(templates).filter('#faostat_ui_menu_item').html(),
+            t = Handlebars.compile(source);
+
+        $(id).html(t( {group: data}));
+
     };
 
     return MENU;
