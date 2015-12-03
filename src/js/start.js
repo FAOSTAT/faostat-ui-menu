@@ -22,7 +22,7 @@ define(['jquery',
             placeholder_id: 'faostat_ui_menu',
 
             // TODO: switch to a common ROUTE configuration file!
-            DOWNLOAD_BASE_URL: '#' + Common.getLocale() + '/download/metadata/',
+            DOWNLOAD_BASE_URL: '#' + Common.getLocale() + '/download/welcome/',
             BROWSE_BASE_URL: '#' + Common.getLocale() + '/browse/domain/'
 
         };
