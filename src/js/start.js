@@ -35,15 +35,16 @@ define(['jquery',
         /* Extend default configuration. */
         this.CONFIG = $.extend(true, {}, this.CONFIG, config);
 
+        this.$menu = $('#' + this.CONFIG.placeholder_id);
+
         this.FAOSTATAPIClient = new FAOSTATAPIClient();
 
         /* Load template. */
         var source = $(templates).filter('#faostat_ui_menu_structure').html(),
-            template = Handlebars.compile(source),
-            dynamic_data,
-            html;
+            t = Handlebars.compile(source),
+            d;
 
-        dynamic_data = {
+        d = {
             home: translate.home,
             home_link: '#' + Common.getLocale() + '/' + ROUTE.HOME + '/',
             browse: translate.browse,
@@ -57,8 +58,9 @@ define(['jquery',
             mes: translate.mes,
             mes_link: '#' + Common.getLocale() + '/standards/methodologies'
         };
-        html = template(dynamic_data);
-        $('#' + this.CONFIG.placeholder_id).html(html);
+
+
+        this.$menu.html(t(d));
 
         /* Show Groups. */
         this.initDropDowns();
@@ -119,6 +121,23 @@ define(['jquery',
             t = Handlebars.compile(source);
 
         $(id).html(t( {group: data}));
+
+    };
+
+    MENU.prototype.select = function(active) {
+
+        //reset selection
+        this.$menu.find('li.active').removeClass('active');
+
+        if (active) {
+            this.$menu.find('li[id="fs-menu-' + active + '"] ').addClass("active");
+        } else {
+            if (active) {
+                this.$menu.find('li[id="fs-menu-' + active+ '"] ').addClass("active");
+            }
+        }
+
+        return this.$template;
 
     };
 
