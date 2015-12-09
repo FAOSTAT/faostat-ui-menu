@@ -108,6 +108,7 @@ define(['jquery',
 
         }, this));
 
+        // render the DD
         this.renderDD(id, data);
 
     };
