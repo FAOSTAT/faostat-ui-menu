@@ -3,6 +3,7 @@
 define(['jquery',
         'config/Config',
         'config/Routes',
+        'config/browse_by_domain/Config',
         'handlebars',
         'text!faostat_ui_menu/html/templates.hbs',
         'i18n!faostat_ui_menu/nls/translate',
@@ -10,7 +11,7 @@ define(['jquery',
         'globals/Common',
         'underscore',
         'amplify',
-        'chaplin'], function ($, C, ROUTE, Handlebars, templates, translate, FAOSTATAPIClient, Common, _) {
+        'chaplin'], function ($, C, ROUTE, CB, Handlebars, templates, translate, FAOSTATAPIClient, Common, _) {
 
     'use strict';
 
@@ -71,21 +72,40 @@ define(['jquery',
             datasource: C.DATASOURCE,
             lang: Common.getLocale()
         }).then(function (json) {
-            self.buildDropDownMenu('#browse_dropdown', self.CONFIG.BROWSE_BASE_URL, json.data);
+            self.buildDropDownMenu('#browse_dropdown', self.CONFIG.BROWSE_BASE_URL, json.data, CB.whitelist);
             self.buildDropDownMenu('#download_dropdown', self.CONFIG.DOWNLOAD_BASE_URL, json.data);
         });
 
     };
 
-    MENU.prototype.buildDropDownMenu = function (id, baseURL, json) {
+    MENU.prototype.buildDropDownMenu = function (id, baseURL, json, whitelist) {
 
-        var data = [];
+        var data = [],
+            wl = whitelist || [];
 
         _.forEach(json, _.bind(function (v) {
-            data.push({
-                item_link: baseURL + v.code,
-                item_title: v.label
-            });
+            var d = {};
+
+            if (wl.length > 0) {
+                if ($.inArray(v.code, wl) >= 0) {
+                    d = {
+
+                        item_link: baseURL + v.code,
+                        item_title: v.label
+                    };
+                    data.push(d);
+                }
+
+            }else {
+                d = {
+                    item_link: baseURL + v.code,
+                    item_title: v.label
+                };
+                data.push(d);
+            }
+
+
+
         }, this));
 
         this.renderDD(id, data);
