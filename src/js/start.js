@@ -64,6 +64,7 @@ define(['jquery',
 
         /* Show Groups. */
         this.initDropDowns();
+
     };
 
     MENU.prototype.initDropDowns = function () {
