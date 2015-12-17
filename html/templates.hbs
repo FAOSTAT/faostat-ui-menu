@@ -10,7 +10,8 @@
                         <span class='icon-bar'></span>
                     </button>
                     <a class='navbar-brand' href='{{home_link}}'>
-                        <img src="src/images/faostat-logo-gray.svg" alt="Faostat">
+                        <img src="src/images/faostat-logo-blue.svg" alt="Faostat">
+                        <!--<img src="src/images/faostat-logo-white.svg" alt="Faostat">-->
                     </a>
                 </div>
                 <div class='collapse navbar-collapse' id='navbar-collapse'>
@@ -35,8 +36,20 @@
                     </ul>
 
                     <ul class='nav navbar-nav navbar-right'>
-                        <li id="fs-search" class="pull-right">
-                            <input data-role="search" class="typeahead" type="text" placeholder="{{search_data}}">
+                        <li id="fs-menu-languages" class='pull-right dropdown'>
+                            <a href='#' class='fs-lang-btn dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'> <span class="domain-icon icojam_location_1"></span></a>
+                            <ul class='dropdown-menu' role='menu' id='download_dropdown'>
+                                <li><a href="#" >العربية</a></li>
+                                <li><a href="#" >中文</a></li>
+                                <li><a href="#" >English</a></li>
+                                <li><a href="#" >Français</a></li>
+                                <li><a href="#" >Русский</a></li>
+                                <li><a href="#" >Español</a></li>
+
+                            </ul>
+                        </li>
+                        <li id="fs-search" class="pull-right fs-menu-search-container">
+                            <span class="icojam_search pull-left fs-search-icon"></span> <input data-role="search" placeholder="Search Data" class="typeahead" type="text" placeholder="{{search_data}}">
                         </li>
                     </ul>
 
