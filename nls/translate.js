@@ -3,6 +3,7 @@ define({
         toggle_navigation: 'toggle_navigation',
         home: 'Home',
         browse: 'Browse Data',
+        indicators: 'Indicators',
         download: 'Download Data',
         compare: 'Compare Data',
         search: 'Search Data',
