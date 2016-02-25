@@ -58,7 +58,9 @@ define(['jquery',
             analysis: translate.analysis,
             analysis_link: '#' + Common.getLocale() + '/analysis',
             mes: translate.mes,
-            mes_link: '#' + Common.getLocale() + '/standards/methodologies'
+            mes_link: '#' + Common.getLocale() + '/standards/methodologies',
+            faq: translate.faq,
+            faq_link: '#' + Common.getLocale() + '/faq'
         };
 
 

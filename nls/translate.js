@@ -9,6 +9,7 @@ define({
         search: 'Search Data',
         analysis: 'Analysis',
         mes: 'Methods & Standards',
+        faq: 'FAQ',
         signin: 'Sign In',
         error: 'FAOSTAT UI Menu Error',
         fao_label: 'Food and Agriculture Organization of the United Nations',
