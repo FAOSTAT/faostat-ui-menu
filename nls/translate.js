@@ -1,6 +1,5 @@
 define({
     root : {
-        toggle_navigation: 'toggle_navigation',
         home: 'Home',
         browse: 'Browse Data',
         indicators: 'Indicators',

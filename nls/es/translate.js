@@ -7,5 +7,7 @@ define({
     analysis: 'Análisis',
     mes: 'Métodos & Normas',
     fao_label: 'Organización de las Naciones Unidas para la Alimentación y la Agricultura',
-    ess_label: 'División de Estadísticas'
+    ess_label: 'División de Estadísticas',
+    faq: 'FAQ',
+    signin: 'Sign In'
 });
