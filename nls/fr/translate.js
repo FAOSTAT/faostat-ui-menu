@@ -1,3 +1,4 @@
+/*global define*/
 define({
     home: 'Home',
     browse: 'Browse Data',

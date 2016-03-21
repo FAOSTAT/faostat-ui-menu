@@ -1,3 +1,4 @@
+/*global define*/
 define({
     home: 'Página Inicial',
     browse: 'Visualizar Datos',
