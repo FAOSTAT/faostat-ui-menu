@@ -46,7 +46,7 @@ define(['jquery',
 
         d = {
             home: translate.home,
-            home_link: '#' + Common.getLocale() + '/' + ROUTE.HOME + '/',
+            home_link: '#' + Common.getLocale() + '/' + ROUTE.HOME,
             browse: translate.browse,
             download: translate.download,
             compare: translate.compare,
