@@ -5,7 +5,7 @@ define({
     indicators: 'Indicators',
     download: 'Télécharger Données',
     compare: 'Comparer Données',
-    search: 'Rechercher Données',
+    search_data: 'Rechercher Données',
     mes: 'Méthodes & Standards',
     faq: 'FAQ',
     signin: 'Sign In',

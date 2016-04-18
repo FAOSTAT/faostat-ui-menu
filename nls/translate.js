@@ -6,7 +6,7 @@ define({
         indicators: 'Indicators',
         download: 'Download Data',
         compare: 'Compare Data',
-        search: 'Search Data',
+        search_data: 'Search Data',
         analysis: 'Analysis',
         mes: 'Methods & Standards',
         faq: 'FAQ',
