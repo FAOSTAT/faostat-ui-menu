@@ -1,16 +1,15 @@
 /*global define*/
 define({
-    home: 'Home',
-    browse: 'Browse Data',
+    home: 'Accueil',
+    browse: 'Explorer Données',
     indicators: 'Indicators',
-    download: 'Download Data',
-    compare: 'Compare Data',
-    search: 'Search Data',
-    analysis: 'Analysis',
-    mes: 'Methods & Standards',
+    download: 'Télécharger Données',
+    compare: 'Comparer Données',
+    search: 'Rechercher Données',
+    mes: 'Méthodes & Standards',
     faq: 'FAQ',
     signin: 'Sign In',
     error: 'FAOSTAT UI Menu Error',
-    fao_label: 'Organisation des Nations unies pour l\'alimentation et l\'agriculture',
-    ess_label: 'Division de la Statistique'
+    fao_label: 'Food and Agriculture Organization of the United Nations',
+    ess_label: 'Statistics Division'
 });
