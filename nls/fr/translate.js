@@ -11,5 +11,6 @@ define({
     signin: 'Sign In',
     error: 'FAOSTAT UI Menu Error',
     fao_label: 'Food and Agriculture Organization of the United Nations',
-    ess_label: 'Statistics Division'
+    ess_label: 'Statistics Division',
+    data: 'Data'
 });

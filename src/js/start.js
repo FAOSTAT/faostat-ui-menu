@@ -60,7 +60,9 @@ define(['jquery',
             mes: translate.mes,
             mes_link: '#' + Common.getLocale() + '/standards/methodologies',
             faq: translate.faq,
-            faq_link: '#' + Common.getLocale() + '/faq'
+            faq_link: '#' + Common.getLocale() + '/faq',
+            data: translate.data,
+            data_link: '#' + Common.getLocale() + '/data'
         };
 
 

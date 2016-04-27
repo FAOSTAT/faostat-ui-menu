@@ -10,5 +10,6 @@ define({
     fao_label: 'Organización de las Naciones Unidas para la Alimentación y la Agricultura',
     ess_label: 'División de Estadísticas',
     faq: 'FAQ',
-    signin: 'Sign In'
+    signin: 'Sign In',
+    data: 'Data'
 });
