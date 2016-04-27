@@ -14,6 +14,7 @@
                     </a>
                 </div>
                 <div class='collapse navbar-collapse' id='navbar-collapse'>
+
                     <ul class='nav navbar-nav navbar-left'>
                         <li id="fs-menu-data">
                             <a href='{{data_link}}'>{{data}}</a>
@@ -53,18 +54,24 @@
 
                     <!-- Lang -->
                     <ul class='nav navbar-nav navbar-right'>
-                        <li class='pull-right dropdown'>
-                            <a href="#" class='fs-lang-btn dropdown-toggle' data-toggle='dropdown' role='button' aria-expanded='false'> <span class="domain-icon icojam_location_1"></span></a>
-                            <ul id="fs-lang" class='dropdown-menu' role='menu'>
+
+                        <li id="fs-search" class="fs-menu-search-container">
+                            <span class="icojam_search pull-left fs-search-icon"></span> <input data-role="search" class="typeahead" type="text" placeholder="{{search_data}}">
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                English
+                                <span class="caret"></span></a>
+                            <ul id="fs-lang" class="dropdown-menu">
                                 <li><a data-locale="en" href="#">English</a></li>
                                 <li><a data-locale="fr" href="#">Français</a></li>
                                 <li><a data-locale="es" href="#">Español</a></li>
                             </ul>
                         </li>
-                        <li id="fs-search" class="pull-right fs-menu-search-container">
-                            <span class="icojam_search pull-left fs-search-icon"></span> <input data-role="search" class="typeahead" type="text" placeholder="{{search_data}}">
-                        </li>
                     </ul>
+
+
 
                 </div>
             </nav>
