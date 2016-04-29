@@ -29,7 +29,9 @@ define(['jquery',
     MENU.prototype.init = function (config) {
 
         /* Extend default configuration. */
-        this.CONFIG = $.extend(true, {}, this.o, config);
+        this.o = $.extend(true, {}, this.o, config);
+
+        this.o.lang = Common.getLocale();
 
         this.$MENU = $('#' + this.o.placeholder_id);
 
@@ -60,6 +62,17 @@ define(['jquery',
         };
 
         this.$MENU.html(t(d));
+
+        // set language in the menu
+        this.setLang();
+
+    };
+
+    MENU.prototype.setLang = function() {
+
+        this.$MENU.find('[data-locale="lang"]')
+            .prepend(this.$MENU.find('[data-locale="'+ this.o.lang +'"]').text()
+        );
 
     };
 
