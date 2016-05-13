@@ -58,7 +58,7 @@ define(['jquery',
             faq_link: '#' + Common.getURI(ROUTE.FAQ),
             data: i18nLabels.data,
             data_link: '#' + Common.getURI(ROUTE.DATA),
-            infographics: '#' + Common.getURI(ROUTE.INFOGRAPHICS)
+            //infographics: '#' + Common.getURI(ROUTE.INFOGRAPHICS)
         };
 
         this.$MENU.html(t(d));
