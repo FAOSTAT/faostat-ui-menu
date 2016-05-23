@@ -1,6 +1,7 @@
 /*global define*/
 /*jslint nomen: true*/
 define(['jquery',
+        'loglevel',
         'config/Config',
         'config/Routes',
         'config/browse_by_domain/Config',
@@ -11,7 +12,7 @@ define(['jquery',
         'globals/Common',
         'underscore',
         'amplify',
-        'chaplin'], function ($, C, ROUTE, CB, Handlebars, templates, i18nLabels, FAOSTATAPIClient, Common, _) {
+        'chaplin'], function ($, log, C, ROUTE, CB, Handlebars, templates, i18nLabels, FAOSTATAPIClient, Common, _) {
 
     'use strict';
 
@@ -78,14 +79,20 @@ define(['jquery',
 
     MENU.prototype.select = function(active) {
 
-        //reset selection
+        log.info("Menu.select;", active);
+
+        // reset selection
         this.$MENU.find('li.active').removeClass('active');
+        // hack for home icon selection that is not a <li>.
+        this.$MENU.find('a.active').removeClass('active');
 
         if (active) {
             this.$MENU.find('li[id="fs-menu-' + active + '"] ').addClass("active");
+            this.$MENU.find('a[id="fs-menu-' + active + '"] ').addClass("active");
         } else {
             if (active) {
                 this.$MENU.find('li[id="fs-menu-' + active+ '"] ').addClass("active");
+                this.$MENU.find('a[id="fs-menu-' + active+ '"] ').addClass("active");
             }
         }
 
