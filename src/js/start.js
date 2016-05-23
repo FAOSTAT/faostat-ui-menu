@@ -16,6 +16,12 @@ define(['jquery',
 
     'use strict';
 
+    var s = {
+
+        NAVBAR_COLLAPSE: ".navbar-collapse"
+
+    };
+
     function MENU() {
 
         this.o = {
@@ -64,16 +70,12 @@ define(['jquery',
 
         this.$MENU.html(t(d));
 
-        // set language in the menu
-        this.setLang();
-
     };
 
-    MENU.prototype.setLang = function() {
+    MENU.prototype.collapse = function() {
 
-        this.$MENU.find('[data-locale="lang"]')
-            .prepend(this.$MENU.find('[data-locale="'+ this.o.lang +'"]').text()
-        );
+        this.$MENU.find(s.NAVBAR_COLLAPSE).collapse('hide');
+
 
     };
 
