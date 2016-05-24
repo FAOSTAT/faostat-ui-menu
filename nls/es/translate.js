@@ -11,5 +11,5 @@ define({
     ess_label: 'División de Estadísticas',
     faq: 'FAQ',
     signin: 'Sign In',
-    data: 'Data'
+    data: 'Datos'
 });
