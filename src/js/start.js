@@ -65,6 +65,7 @@ define(['jquery',
             faq_link: '#' + Common.getURI(ROUTE.FAQ),
             data: i18nLabels.data,
             data_link: '#' + Common.getURI(ROUTE.DATA),
+            search_placeholder: i18nLabels.search_placeholder
             //infographics: '#' + Common.getURI(ROUTE.INFOGRAPHICS)
         };
 
