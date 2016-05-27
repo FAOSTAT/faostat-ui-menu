@@ -12,5 +12,6 @@ define({
     fao_label: 'Food and Agriculture Organization of the United Nations',
     ess_label: 'Statistics Division',
     data: 'Données',
-    search_placeholder: 'Search an Indicator or Commodity'
+    search_placeholder: 'Search an Indicator or Commodity',
+    browse_by_country: 'Country Profile'
 });
