@@ -92,12 +92,12 @@ define(['jquery',
         this.$MENU.find('a.active').removeClass('active');
 
         if (active) {
-            this.$MENU.find('li[id="fs-menu-' + active + '"] ').addClass("active");
-            this.$MENU.find('a[id="fs-menu-' + active + '"] ').addClass("active");
+            this.$MENU.find('li[data-role="fs-menu-' + active + '"] ').addClass("active");
+            this.$MENU.find('a[data-role="fs-menu-' + active + '"] ').addClass("active");
         } else {
             if (active) {
-                this.$MENU.find('li[id="fs-menu-' + active+ '"] ').addClass("active");
-                this.$MENU.find('a[id="fs-menu-' + active+ '"] ').addClass("active");
+                this.$MENU.find('li[data-role="fs-menu-' + active+ '"] ').addClass("active");
+                this.$MENU.find('a[data-role="fs-menu-' + active+ '"] ').addClass("active");
             }
         }
 

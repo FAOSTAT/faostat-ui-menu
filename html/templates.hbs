@@ -9,7 +9,7 @@
                 <span class='icon-bar'></span>
             </button>
 
-            <a id="fs-menu-home" class='navbar-brand hidden-xs' href='{{home_link}}'>
+            <a data-role="fs-menu-home" class='navbar-brand hidden-xs' href='{{home_link}}'>
                 <img src="http://www.fao.org/fileadmin/templates/faoweb/images/icons/home.png" class="home-ico">
                 <img src="http://www.fao.org/fileadmin/templates/faoweb/images/icons/home-h.png" class="home-h-ico">
             </a>
@@ -24,11 +24,11 @@
 
             <ul class='nav navbar-nav navbar-left fs-nav-link'>
 
-                <li>
+                <li data-role="fs-menu-home" class="visible-xs">
                     <a class="fs-nav-link" href='{{home_link}}'>{{home}}</a>
                 </li>
 
-                <li>
+                <li data-role="fs-menu-data">
                     <a class="fs-nav-link" href='{{data_link}}'>{{data}}</a>
                 </li>
                 <!-- <li id="fs-menu-country-profile" class='dropdown'>
@@ -50,19 +50,19 @@
                                 <a href='{{indicators_link}}'>{{indicators}}</a>
                             </li>
                         -->
-                <li>
+                <li data-role="fs-menu-browse_by_country">
                     <a class="fs-nav-link" href='{{browse_by_country_link}}'>{{browse_by_country}}</a>
                 </li>
-                <li>
+                <li data-role="fs-menu-compare">
                     <a class="fs-nav-link" href='{{compare_link}}'>{{compare}}</a>
                 </li>
-                <li>
+                <li data-role="fs-menu-standards">
                     <a class="fs-nav-link" href='{{mes_link}}'>{{mes}}</a>
                 </li>
                 <!--                        <li id="fs-menu-infographics">
                             <a href='{{infographics_link}}'>Infographics</a>
                         </li>-->
-                <li>
+                <li data-role="fs-menu-faq">
                     <a class="fs-nav-link" href='{{faq_link}}'>{{faq}}</a>
                 </li>
             </ul>
@@ -70,7 +70,7 @@
             <!-- Lang -->
             <ul class='nav navbar-nav navbar-right'>
 
-                <li id="fs-search" class="fs-menu-search-container">
+                <li data-role="fs-search" class="fs-menu-search-container">
                     <span class="icojam_search pull-left fs-search-icon"></span>
                     <input data-role="search" class="typeahead" type="text" placeholder="{{search_placeholder}}">
                 </li>
