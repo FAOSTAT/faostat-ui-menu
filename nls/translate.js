@@ -15,7 +15,7 @@ define({
         ess_label: 'Statistics Division',
         data: 'Data',
         search_placeholder: 'Search an Indicator or Commodity',
-        browse_by_country: 'Country Profile'
+        browse_by_country: 'Country Indicators'
     },
     fr : true,
     es : true

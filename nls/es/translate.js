@@ -13,5 +13,5 @@ define({
     signin: 'Sign In',
     data: 'Datos',
     search_placeholder: 'Search an Indicator or Commodity',
-    browse_by_country: 'Country Profile'
+    browse_by_country: 'Country Indicators'
 });
