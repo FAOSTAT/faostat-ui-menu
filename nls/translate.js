@@ -15,7 +15,8 @@ define({
         ess_label: 'Statistics Division',
         data: 'Data',
         search_placeholder: 'Search an Indicator or Commodity',
-        browse_by_country: 'Country Indicators'
+        browse_by_country: 'Country Indicators',
+        definitions: "Definitions and Standards"
     },
     fr : true,
     es : true

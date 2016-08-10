@@ -13,5 +13,6 @@ define({
     signin: 'Sign In',
     data: 'Datos',
     search_placeholder: 'Search an Indicator or Commodity',
-    browse_by_country: 'Indicadores por País'
+    browse_by_country: 'Indicadores por País',
+    definitions: "Definitions and Standards"
 });

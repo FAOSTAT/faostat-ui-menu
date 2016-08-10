@@ -13,5 +13,6 @@ define({
     ess_label: 'Statistics Division',
     data: 'Données',
     search_placeholder: 'Search an Indicator or Commodity',
-    browse_by_country: 'Indicateurs de Pays'
+    browse_by_country: 'Indicateurs de Pays',
+    definitions: "Definitions and Standards"
 });
