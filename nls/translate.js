@@ -10,14 +10,12 @@ define({
         mes: 'Methods and Standards',
         faq: 'FAQ',
         signin: 'Sign In',
-        error: 'FAOSTAT UI Menu Error',
-        fao_label: 'Food and Agriculture Organization of the United Nations',
-        ess_label: 'Statistics Division',
         data: 'Data',
         search_placeholder: 'Search an Indicator or Commodity',
         browse_by_country: 'Country Indicators',
         definitions: "Definitions and Standards"
     },
     fr : true,
-    es : true
+    es : true,
+    ar: true
 });
