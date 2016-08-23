@@ -8,11 +8,10 @@ define(['jquery',
         'handlebars',
         'text!faostat_ui_menu/html/templates.hbs',
         'i18n!faostat_ui_menu/nls/translate',
-        'faostatapiclient',
         'globals/Common',
         'underscore',
         'amplify',
-        'chaplin'], function ($, log, C, ROUTE, CB, Handlebars, templates, i18nLabels, FAOSTATAPIClient, Common, _) {
+        'chaplin'], function ($, log, C, ROUTE, CB, Handlebars, templates, i18nLabels, Common, _) {
 
     'use strict';
 
@@ -41,8 +40,6 @@ define(['jquery',
         this.o.lang = Common.getLocale();
 
         this.$MENU = $('#' + this.o.placeholder_id);
-
-        this.FAOSTATAPIClient = new FAOSTATAPIClient();
 
         /* Load template. */
         var source = $(templates).filter('#faostat_ui_menu_structure').html(),
