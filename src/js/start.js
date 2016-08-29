@@ -78,7 +78,6 @@ define(['jquery',
 
         this.$MENU.find(s.NAVBAR_COLLAPSE).collapse('hide');
 
-
     };
 
     MENU.prototype.select = function(active) {
