@@ -65,8 +65,8 @@ define(['jquery',
             data: i18nLabels.data,
             data_link: '#' + Common.getURI(ROUTE.DATA),
             search_placeholder: i18nLabels.search_placeholder,
-            browse_by_country_link: '#' + Common.getURI(ROUTE.BROWSE_BY_COUNTRY),
-            browse_by_country: i18nLabels.browse_by_country
+            country_indicators_link: '#' + Common.getURI(ROUTE.BROWSE_BY_COUNTRY),
+            country_indicators: i18nLabels.country_indicators
             //infographics: '#' + Common.getURI(ROUTE.INFOGRAPHICS)
         };
 

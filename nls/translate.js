@@ -2,7 +2,7 @@
 define({
     root : {
         data: 'Data',
-        browse_by_country: 'Country Indicators',
+        country_indicators: 'Country Indicators',
         compare: 'Compare Data',
         definitions: "Definitions and Standards",
         faq: 'FAQ',
