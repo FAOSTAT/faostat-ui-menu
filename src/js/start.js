@@ -17,29 +17,26 @@ define(['jquery',
 
     var s = {
 
-        NAVBAR_COLLAPSE: ".navbar-collapse"
+        NAVBAR_COLLAPSE: ".navbar-collapse",
+
+
+    },
+    defaultConfig = {
 
     };
 
     function MENU() {
-
-        this.o = {
-
-            prefix: 'fenix_',
-            placeholder_id: 'faostat_ui_menu'
-
-        };
-
+        return this;
     }
 
     MENU.prototype.init = function (config) {
 
         /* Extend default configuration. */
-        this.o = $.extend(true, {}, this.o, config);
+        this.o = $.extend(true, {}, defaultConfig, config);
 
         this.o.lang = Common.getLocale();
 
-        this.$MENU = $('#' + this.o.placeholder_id);
+        this.$MENU = $(this.o.container);
 
         /* Load template. */
         var source = $(templates).filter('#faostat_ui_menu_structure').html(),
@@ -81,8 +78,6 @@ define(['jquery',
     };
 
     MENU.prototype.select = function(active) {
-
-        log.info("Menu.select;", active);
 
         // reset selection
         this.$MENU.find('li.active').removeClass('active');
