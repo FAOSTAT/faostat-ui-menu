@@ -72,7 +72,7 @@
             </ul>
 
             <!-- Lang -->
-            <ul class='nav navbar-nav navbar-right flip'>
+            <ul class='nav navbar-nav navbar-right flip hidden-sm'>
 
                 <li data-role="fs-search" class="fs-menu-search-container">
                     <span class="icojam_search pull-left fs-search-icon"></span>
@@ -82,6 +82,17 @@
             </ul>
         </div>
     </nav>
+
+    <div>
+        <ul class='nav navbar-nav navbar-right flip visible-sm'>
+
+            <li data-role="fs-search" class="fs-menu-search-container fs-menu-search-container-sm">
+                <span class="icojam_search pull-left fs-search-icon"></span>
+                <input data-role="search" class="typeahead" type="text" placeholder="{{search_placeholder}}">
+            </li>
+
+        </ul>
+    </div>
 
 </script>
 
