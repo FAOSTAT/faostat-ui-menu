@@ -1,5 +1,6 @@
 /*global define*/
 define({
+    home: 'Página inicial',
     data: 'Datos',
     country_indicators: 'Indicadores por País',
     compare: 'Comparar Datos',

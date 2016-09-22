@@ -1,6 +1,7 @@
 /*global define*/
 define({
     root : {
+        home: 'Home',
         data: 'Data',
         country_indicators: 'Country Indicators',
         compare: 'Compare Data',
