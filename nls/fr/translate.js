@@ -2,9 +2,9 @@
 define({
     home: 'Accueil',
     data: 'Données',
-    country_indicators: 'Indicateurs de Pays',
-    compare: 'Comparer Données',
-    definitions: "Definitions and Standards",
+    country_indicators: 'Indicateurs de pays',
+    compare: 'Comparer les données',
+    definitions: "Définitions and Standards",
     faq: 'FAQ',
-    search_placeholder: 'Search an Indicator or Commodity'
+    search_placeholder: 'Rechercher un indicateur or Commodity'
 });
