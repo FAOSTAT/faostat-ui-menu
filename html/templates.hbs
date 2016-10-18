@@ -45,8 +45,8 @@
                 </li>
             </ul>
 
-            <!-- Lang -->
-            <ul class='nav navbar-nav navbar-right flip hidden-sm'>
+            <!-- search visible large -->
+            <ul class='nav navbar-nav navbar-right flip hidden-sm hidden-md'>
 
                 <li data-role="fs-search" class="fs-menu-search-container">
                     <span class="icojam_search pull-left fs-search-icon"></span>
@@ -57,15 +57,16 @@
         </div>
     </nav>
 
-    <div>
-        <ul class='nav navbar-nav navbar-right flip visible-sm'>
-
-            <li data-role="fs-search" class="fs-menu-search-container fs-menu-search-container-sm">
-                <span class="icojam_search pull-left fs-search-icon"></span>
-                <input data-role="search" class="typeahead" type="text" placeholder="{{search_placeholder}}">
-            </li>
-
-        </ul>
+    <!-- search visible small -->
+    <div class="row visible-sm visible-md">
+        <div class="col-md-12">
+            <ul class='nav navbar-nav navbar-right flip'>
+                <li data-role="fs-search" class="fs-menu-search-container fs-menu-search-container-sm">
+                    <span class="icojam_search pull-left fs-search-icon"></span>
+                    <input data-role="search" class="typeahead" type="text" placeholder="{{search_placeholder}}">
+                </li>
+            </ul>
+        </div>
     </div>
 
 </script>
