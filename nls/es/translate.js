@@ -4,7 +4,7 @@ define({
     data: 'Datos',
     country_indicators: 'Indicadores por País',
     compare: 'Comparar Datos',
-    definitions: "Definitions and Standards",
+    definitions_and_standards: "Definitions and Standards",
     faq: 'FAQ',
     search_placeholder: 'Search an Indicator or Commodity'
 });
