@@ -5,6 +5,6 @@ define({
     country_indicators: 'Indicateurs de pays',
     compare: 'Comparer les données',
     definitions_and_standards: "Définitions et Standards",
-    faq: 'FAQ',
+    faq: 'QFD',
     search_placeholder: 'Rechercher un indicateur ou un produit'
 });
