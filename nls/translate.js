@@ -11,5 +11,6 @@ define({
     },
     fr : true,
     es : true,
-    ar: true
+    ar: true,
+    zh: true
 });
