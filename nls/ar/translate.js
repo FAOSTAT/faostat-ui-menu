@@ -1,11 +1,10 @@
 /*global define*/
 define({
-    // TODO: not reviewed
-    home: 'منزل',
+    home: 'الصفحة الرئيسية',
     data: 'البيانات',
     country_indicators: 'المؤشرات القطرية',
     compare: 'مقارنة البيانات',
-    definitions_and_standards: "التعاريف والمعايير",
-    faq: 'التعليمات',
-    search_placeholder: 'بحث مؤشرا أو السلع'
+    definitions_and_standards: "التعريفات والمعايير",
+    faq: 'الأسئلة المتكررة',
+    search_placeholder: 'البحث عن مؤشر أو سلع'
 });

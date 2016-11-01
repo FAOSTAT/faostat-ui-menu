@@ -1,6 +1,6 @@
 /*global define*/
 define({
-    root : {
+    root: {
         home: 'Home',
         data: 'Data',
         country_indicators: 'Country Indicators',
@@ -12,5 +12,6 @@ define({
     fr : true,
     es : true,
     ar: true,
-    zh: true
+    zh: true,
+    ru: true
 });
