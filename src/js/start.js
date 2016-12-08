@@ -63,7 +63,8 @@ define(['jquery',
             data_link: '#' + Common.getURI(ROUTE.DATA),
             search_placeholder: i18nLabels.search_placeholder,
             country_indicators_link: '#' + Common.getURI(ROUTE.BROWSE_BY_COUNTRY),
-            country_indicators: i18nLabels.country_indicators
+            country_indicators: i18nLabels.country_indicators,
+            faostat: i18nLabels.faostat,
             //infographics: '#' + Common.getURI(ROUTE.INFOGRAPHICS)
         };
 

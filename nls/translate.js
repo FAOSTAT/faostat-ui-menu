@@ -7,7 +7,8 @@ define({
         compare: 'Compare Data',
         definitions_and_standards: "Definitions and Standards",
         faq: 'FAQ',
-        search_placeholder: 'Search an Indicator or Commodity'
+        search_placeholder: 'Search an Indicator or Commodity',
+        faostat: '<b>FAO</b>STAT',
     },
     fr : true,
     es : true,

@@ -6,5 +6,6 @@ define({
     compare: 'Сравнить данные',
     definitions_and_standards: "Определения и стандарты",
     faq: 'Часто задаваемые вопросы',
-    search_placeholder: 'Поиск по показателю или товару'
+    search_placeholder: 'Поиск по показателю или товару',
+    faostat: '<b>ФАО</b>СТАТ'
 });
